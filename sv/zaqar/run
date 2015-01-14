@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sv start mongodb || exit 1
+
+exec 2>&1
+exec zaqar-server
